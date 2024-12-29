@@ -215,20 +215,6 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* 横屏模式下的调整 */
-@media (max-height: 600px) and (orientation: landscape) {
-    #pause-menu .modal-content {
-        width: 216px;
-        height: 360px;
-        padding: 20px 15px;
-    }
-
-    #pause-menu .modal-content button {
-        padding: 10px;
-        font-size: 0.9em;
-    }
-}
-
 .tutorial-content {
     text-align: left;
     margin: 20px 0;
@@ -237,25 +223,6 @@ button:hover {
 .tutorial-content p {
     margin: 10px 0;
     line-height: 1.5;
-}
-
-/* 媒体查询，在移动设备上显示控制按钮 */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .game-area {
-        margin-bottom: 20px;
-    }
-}
-
-/* 可选：在大屏幕上隐藏移动端控制按钮 */
-@media (min-width: 1200px) {
-    .mobile-controls {
-        display: none;
-    }
 }
 
 /* 菜单按钮样式 */
